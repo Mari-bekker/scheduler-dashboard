@@ -1,7 +1,7 @@
 import React, { Component } from "react";
+import classnames from "classnames";
 import Loading from "./Loading";
 import Panel from "./Panel";
-import classnames from "classnames";
 import axios from "axios";
 import {
   getTotalInterviews,
@@ -36,7 +36,7 @@ const data = [
 
 class Dashboard extends Component {
   state = {
-    loading: true,
+    loading: false,
     focused: null,
     days: [],
     appointments: {},
